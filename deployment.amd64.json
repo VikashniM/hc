@@ -7,11 +7,6 @@
           "type": "docker",
           "settings": {
             "registryCredentials": {
-              "gepocdeploy": {
-                "address": "gepocdeploy.azurecr.io",
-                "password": "wBDh/s8elGjtW2BOlTNofqbIhCh0nsfj",
-                "username": "gepocdeploy"
-              }
             }
           }
         },
@@ -33,20 +28,7 @@
             }
           }
         },
-        "modules": {
-          "edgeui": {
-            "version": "1.0",
-            "type": "docker",
-            "status": "running",
-            "restartPolicy": "always",
-            "settings": {
-              "image": "gepocdeploy.azurecr.io/edgeui:latest",
-              "createOptions": "{\"HostConfig\":{\"PortBindings\":{\"8000/tcp\":[{\"HostPort\":\"8000\"}]}}}"
-            }
-          }
-        }
-      }
-    },
+        
     "$edgeHub": {
       "properties.desired": {
         "schemaVersion": "1.1",
