@@ -7,9 +7,9 @@ rm packages-microsoft-prod.deb
 
 #moby engine
 sudo apt-get update
-yes | sudo apt-get install moby-engine
+sudo apt-get install -y moby-engine
 
 #iot defender
 sudo apt-get update
-yes | sudo apt-get install aziot-edge defender-iot-micro-agent-edge
+sudo apt-get install -y aziot-edge defender-iot-micro-agent-edge
 
