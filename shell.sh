@@ -70,6 +70,8 @@ sudo apt install -y python3-pip
 pip install -y azure-keyvault-certificates azure-identity azure-keyvault-secrets
 
 #download python script
-FILEPATH=""
+#FILEPATH=""
+cd certificates
+git clone https://github.com/VikashniM/hc.git
 python3 download.py
-./download.sh
+#./download.sh
