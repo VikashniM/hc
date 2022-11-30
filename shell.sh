@@ -67,11 +67,12 @@ export VAULT_URL="https://key-edge-dev-infra-001.vault.azure.net"
 #pre-req for python script
 sudo apt-get update
 sudo apt install -y python3-pip
-pip install -y azure-keyvault-certificates azure-identity azure-keyvault-secrets
+pip install azure-keyvault-certificates azure-identity azure-keyvault-secrets
 
 #download python script
 #FILEPATH=""
 cd certificates
 git clone https://github.com/VikashniM/hc.git
+cd certificates/hc
 python3 download.py
 #./download.sh
