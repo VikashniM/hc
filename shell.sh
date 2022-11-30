@@ -14,6 +14,7 @@ sudo apt-get update
 sudo apt-get install -y aziot-edge defender-iot-micro-agent-edge
 
 #update config file
+
 sudo sh -c "cat > /etc/aziot/config.toml" << 'EOF' 
 auto_reprovisioning_mode="AlwaysOnStartup"
 [provisioning]
@@ -57,3 +58,15 @@ uri = "unix:///var/run/docker.sock"
 network = "azure-iot-edge"
 EOF
 
+#set env variables
+export AZURE_CLIENT_ID="5a50ed53-0a78-4b7b-9b74-c301a663aed6"
+export AZURE_CLIENT_SECRET="mrD8Q~OkYGaKHpLugvoI0hrWuQiEXj8usDsj7atv"
+export AZURE_TENANT_ID="6bc44698-b191-4f2e-97ac-cd7b430088cf"
+export VAULT_URL="https://key-edge-dev-infra-001.vault.azure.net"
+
+#pre-req for python script
+sudo apt-get update
+sudo apt install python3-pip
+pip install azure-keyvault-certificates azure-identity azure-keyvault-secrets
+
+#download python script
