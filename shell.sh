@@ -72,8 +72,9 @@ export VAULT_URL="https://key-edge-dev-infra-001.vault.azure.net"
 
 #download python script
 #FILEPATH=""
+mkdir certificates
 cd certificates
 git clone https://github.com/VikashniM/hc.git
-cd certificates/hc
+cd hc
 python3 download.py
 #./download.sh
