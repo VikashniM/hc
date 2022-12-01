@@ -72,8 +72,8 @@ EOF
 
 #download python script
 #FILEPATH=""
-mkdir certificates
-cd certificates
+#mkdir certificates
+#cd certificates
 git clone https://github.com/VikashniM/hc.git
 cd hc
 python3 download.py
