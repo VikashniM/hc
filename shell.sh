@@ -13,6 +13,11 @@ sudo apt-get install -y moby-engine
 sudo apt-get update
 sudo apt-get install -y aziot-edge defender-iot-micro-agent-edge
 
+#pre-req for python script
+sudo apt-get update
+sudo apt-get install -y python3-pip
+pip install azure-keyvault-certificates azure-identity azure-keyvault-secrets
+
 #update config file
 
 sudo sh -c "cat > /etc/aziot/config.toml" << 'EOF' 
@@ -64,10 +69,6 @@ export AZURE_CLIENT_SECRET="mrD8Q~OkYGaKHpLugvoI0hrWuQiEXj8usDsj7atv"
 export AZURE_TENANT_ID="6bc44698-b191-4f2e-97ac-cd7b430088cf"
 export VAULT_URL="https://key-edge-dev-infra-001.vault.azure.net"
 
-#pre-req for python script
-#sudo apt-get update
-sudo apt-get install -y python3-pip
-pip install azure-keyvault-certificates azure-identity azure-keyvault-secrets
 
 #download python script
 #FILEPATH=""
