@@ -14,9 +14,9 @@ sudo apt-get update
 sudo apt-get install -y aziot-edge defender-iot-micro-agent-edge
 
 #pre-req for python script
-#sudo apt-get update
-#sudo apt-get install -y python3-pip
-#pip install azure-keyvault-certificates azure-identity azure-keyvault-secrets
+sudo apt-get update
+sudo apt-get install -y python3-pip
+pip install azure-keyvault-certificates azure-identity azure-keyvault-secrets
 
 #update config file
 
@@ -74,7 +74,7 @@ EOF
 #FILEPATH=""
 #mkdir certificates
 #cd certificates
-git clone https://github.com/VikashniM/hc.git
+#git clone https://github.com/VikashniM/hc.git
 #cd hc
 #python3 download.py
 #./download.sh
