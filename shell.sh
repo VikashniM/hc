@@ -75,6 +75,6 @@ EOF
 #mkdir certificates
 #cd certificates
 git clone https://github.com/VikashniM/hc.git
-cd hc
-python3 download.py
+#cd hc
+#python3 download.py
 #./download.sh
